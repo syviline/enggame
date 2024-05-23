@@ -486,6 +486,11 @@ dialogs = {
             () => {
                 clearDialog()
                 addText('СТАРОСЛАВЯНСКОЕ ИСЧЕЗНОВЕНИЕ БАЛЛОВ ИЗ МОДЕУСА')
+            },
+            () => {
+                clearDialog()
+                addText('СОЗДАТЕЛЬ: АНТОН ТРЕГУБОВ')
+                addText('ХУДОЖНИК: ВЯЧЕСЛАВ КОЧУРИН (больше его не найму)')
             }
         ]
     },
@@ -822,7 +827,7 @@ function animate() {
             }
         })
 
-        context.fillText('Player X: ' + player.x.toFixed(2) + ', Player Y: ' + player.y.toFixed(2), camera.x + 10, camera.y + 90);
+        // context.fillText('Player X: ' + player.x.toFixed(2) + ', Player Y: ' + player.y.toFixed(2), camera.x + 10, camera.y + 90);
 
         let frameElapsedTime = Date.now() - frameStartTime;
         totalElapsedTime += frameElapsedTime;
@@ -834,7 +839,7 @@ function animate() {
         let averageFrameTime = totalElapsedTime / frameCount;
 
         // Display the average time per frame
-        context.fillText('Average frame time: ' + averageFrameTime.toFixed(2) + ' ms', camera.x + 10, camera.y + 110);
+        // context.fillText('Average frame time: ' + averageFrameTime.toFixed(2) + ' ms', camera.x + 10, camera.y + 110);
 
         context.restore();
 
