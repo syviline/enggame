@@ -14,6 +14,47 @@ let horrorSound = new Audio('sounds/horror.mp3');
 // diningroomSound.play()
 // diningroomSound.pause()
 
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "imgs/ahshit.png",
+    "imgs/arab.jpg",
+    "imgs/areyousure.png",
+    "imgs/background.png",
+    "imgs/bogatyr.png",
+    "imgs/diningseller.png",
+    "imgs/eminem.png",
+    "imgs/eminemthrow.jpg",
+    "imgs/floor1.png",
+    "imgs/floor2.png",
+    "imgs/floor3.png",
+    "imgs/floor4.png",
+    "imgs/gigachad.jpg",
+    "imgs/guyLeft.png",
+    "imgs/guyRight.png",
+    "imgs/kirill.jpg",
+    "imgs/lostappeal.jpg",
+    "imgs/mathfuck.png",
+    "imgs/npc1.png",
+    "imgs/npc2.png",
+    "imgs/npc3.png",
+    "imgs/npc4.png",
+    "imgs/platonov.png",
+    "imgs/platonovCombo.jpg",
+    "imgs/player.jpeg",
+    "imgs/player.png",
+    "imgs/room.png",
+    "imgs/snoopdogg.png",
+    "imgs/Чучело.png",
+)
+
 let platonovNPCImage = new Image();
 platonovNPCImage.src = 'imgs/npc1.png';
 let npc2 = new Image()
