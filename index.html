@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trash Collector Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Pixelify Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        #gameCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .dialogBox {
+            display: none;
+            flex-direction: column;
+            width: 100vw;
+            max-height: 100vh;
+        }
+
+        .images {
+            display: flex;
+            max-height: 70vh;
+        }
+
+        .images img {
+            width: 50%;
+        }
+
+        .dialog {
+            height: 30vh;
+            max-height: 30vh;
+            border-top: 2px solid black;
+            padding: 20px;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        img {
+            object-fit: contain;
+        }
+
+        .fullscreenImg {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            z-index: 999;
+        }
+
+        .fullscreenImg img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .correctAnswer {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="fullscreenImg">
+    <img src="" alt="">
+</div>
+<div class="dialogBox">
+    <div class="images">
+        <img src="" alt="" class="pic1">
+        <img src="" alt="" class="pic2">
+    </div>
+    <div class="dialog">
+
+    </div>
+</div>
+<canvas id="gameCanvas"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
